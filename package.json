@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@aldwinb23/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "For learning purposes only. Not intended for production.",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/aldwinb23/Lotide.git"
   },
-  "author": "",
+  "author": "aldwinb23",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/aldwinb23/Lotide/issues"
