@@ -1,23 +1,21 @@
 
 const middle = function(array) {
-  let middleArr = [];
+  let newArr = [];
+
   if (array.length <= 2) {
-    return middleArr;
+    return newArr;
   }
-  if (array.length > 2) {
-    for (let x = 0; x < array.length; x++) {
-      if (array.length % 2 === 0) {
-        let midNum = array.length / 2;
-        middleArr.push(array[midNum - 1]);
-        middleArr.push(array[midNum]);
-        return middleArr;
-      } else if (array.length % 2 !== 0) {
-        let midNum = Math.floor(array.length / 2);
-        middleArr.push(array[midNum]);
-        return middleArr;
-      }
-    }
+
+  let middleArr = Math.floor(array.length / 2);
+
+  if (array.length % 2 === 0) {
+    lowMid = array[middleArr -1];
+    newArr.push(lowMid);
+    newArr.push(array[middleArr]);
+    return newArr;
   }
-};
+  
+  return array[middleArr];
+}
 
 module.exports = middle;
